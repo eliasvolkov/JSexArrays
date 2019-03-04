@@ -140,3 +140,7 @@ const newArray = transform(data).map(item =>{
        date: newDate(item.date)
     }
 });
+
+const filtredArray = newArray.filter((item)=>item.isVisible === true);
+
+console.log(filtredArray);
