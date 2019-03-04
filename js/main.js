@@ -117,3 +117,26 @@ function transform (array) {
    });
    return newArray;
 }
+
+const newArray = transform(data).map(item =>{
+   const newDescr = (descr)=>{
+      let string = descr.slice(0,15);
+      return string + "...";
+   }
+   const newDate = (date)=>{
+      let tmpDate = new Date(date);
+      return tmpDate.getFullYear() + "/" +
+            tmpDate.getMonth() + "/" +
+            tmpDate.getDate() + " " +
+            tmpDate.getHours() + ":" +
+            tmpDate.getMinutes();
+   }
+    return {
+       name: item.name.toLowerCase(),
+       params: `${item.params.status}=>${item.params.progress}`,
+       isVisible:  item.params.status,
+       url: `http://${item.url}`,
+       description: newDescr(item.description),
+       date: newDate(item.date)
+    }
+});
