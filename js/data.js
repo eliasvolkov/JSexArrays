@@ -1,5 +1,5 @@
 // Это реальный объект на основе которого вам надо дудет строить галлерею
-var data = [{
+export var data = [{
 	url: "desktopwallpapers.org.ua/mini/201507/40069.jpg",
 	name: "CHEVROLET",
 	id : 1,
@@ -100,3 +100,4 @@ var data = [{
 	description : "uded through alternative means, such as additional",
 	date : 1322159200637
 }]
+
