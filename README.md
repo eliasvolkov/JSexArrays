@@ -30,3 +30,19 @@
 Для печати используем отдельную функцию как в прошлых заданиях. То есть вынесете console.log в отдельную функцию.
 
 Пример результата (количество элементов в результате должно быть не два а сколько укажете в переменной):
+
+data = [{
+    url: "http://desktopwallpapers.org.ua/mini/201507/40069.jpg",
+    name: "Chevrolet",
+    params : "true=>80",
+    isVisible : true,
+    description : "be conveyed to ...",
+    date : "2015/01/25 14:15"
+},{
+    url: "http://desktopwallpapers.org.ua/mini/201507/40068.jpg",
+    name: "Dewoo",
+    params : "true=>88",
+    isVisible : true,
+    description : "sing color to a...",
+    date : "2015/12/18 15:35"
+}]
